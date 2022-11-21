@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Connection</title>
+    <link rel="shortcut icon" href="./assets/icon_quiz.png" type="image">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a17a9e7ecd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ============Landing page section================= -->
+    <div class="landing-page-Container">
+        <div class="userDetails-container flex-item">
+            <div class="user-image"></div>
+            <span class="userId">user1235649</span>
+        </div>
+        <div class="java-container flex-item">Java Quiz</div>
+        <div class="solo-leveling-container flex-item">Solo Leveling Quiz</div>
+        <div class="css-container flex-item">Css Quiz</div>
+        <div class="c-container flex-item">C Quiz</div>
+        <div class="op-container flex-item">One Piece Quiz</div>
+        <div class="about flex-item">About Us</div>
+        <div class="login flex-item">login/Sign Up</div>
+        
+    </div>
+    <!-- ==============Quiz Section==================== -->
+    <div class="quiz-container">
+        <div class="qA-container">
+            <div class="qstn-block"></div>
+            <div class="option-container">
+                <input type="button" id="A"value="" onclick="answerSelected('A',0)">
+                <input type="button" id="B"value="" onclick="answerSelected('B',1)">
+                <input type="button" id="C"value="" onclick="answerSelected('C',2)">
+                <input type="button" id="D"value="" onclick="answerSelected('D',3)">
+            </div>
+            <div class="timer">00:00</div>
+        </div>
+    </div>
+    <!-- ===============Score Section===================== -->
+    <div class="score-container">
+        <span>You've scored</span>
+        <div class="display">
+            <div class="star-container">
+                <div class="star" id="s1"></div>
+                <div class="star"id="s2"></div>
+                <div class="star"id="s3"></div>
+            </div>
+            <div class="score">0/10</div>
+        </div>
+        <span id="info">complete in < 1 min with 4 correct answers to get a <i class="fa-regular fa-star"></i></span>
+    </div>
+        
+    <script src="./main/main.js"></script>
+</body>
+</html>
