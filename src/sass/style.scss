@@ -1,0 +1,215 @@
+/*=============RESETS================*/
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 100%;
+    height:100%;
+}
+input{
+    border:none;
+}
+
+/*==================Landing page section===================*/
+.landing-page-Container{
+    width:60vw;
+    display: flex;
+    margin: 3rem auto;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    //border:2px solid black;
+//    display: none;
+
+    .flex-item{
+        height:12rem;
+        width:12rem;
+        cursor: pointer;
+        position: relative;
+        background-color: gray;
+        border-radius: 20px;
+        text-align: center;
+        color:#fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 3em;
+        margin-bottom: 0.5rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .userDetails-container,.login{
+        height:12rem;
+        color:#000;
+        font-family: serif;
+        padding-top: 0;
+        .user-image{
+            position: relative;
+            top:-2rem;
+            height:4rem;
+            width:4rem;
+            background: url("../assets/monkey.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            border:2px solid black;
+            margin: 0.7rem auto;
+        }
+    }
+    .java-container{
+        background-color: hsl(20, 100%, 49%);
+    }
+    .solo-leveling-container,.op-container,.userDetails-container{
+        background-color: rgb(206, 195, 195);
+        color:#000;
+    }
+    .login{
+        background-color: rgb(250, 6, 68);
+        color:#fff;
+        font-family: inherit;
+        padding-top: 2rem;
+    }
+    .css-container{
+        background-color: #AA02FF;
+    }
+    .c-container,.about{
+        // height:17rem;
+        // transform: translateY(-5rem);
+        background-color:rgb(250, 6, 68);
+    }
+    .about{
+        background: url("../assets/About-Us.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:#FA0644;
+        font-size: 2rem;
+    }
+}
+/*==============Question Answer Section=================*/
+.quiz-container{
+    width:100vw;
+    height:100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .qA-container{
+        position: relative;
+        width:23rem;
+        height:23rem;
+        background-color: #130362;
+        border-radius: 20px;
+        font-size: larger;
+        .qstn-block{
+            margin:2rem auto;
+            height:40%;
+            width:90%;
+            max-width:40rem;
+            max-height:10rem;
+            background-color: #fff;
+            border-radius: 20px;
+            padding:1rem;
+        }
+        .option-container{
+            margin:auto;
+            width:90%;
+            height:7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            input[type="button"]{
+                width:10rem;
+                height:2rem;
+                border-radius: 20px;
+                position: relative;
+                display: inline-block;
+                background-color: #26128b;
+                color:#fff;
+                margin-left:0.2rem;
+                margin-bottom: 0.2rem;
+                cursor: pointer;
+            }
+        }
+        .timer{
+            margin:auto;
+            height:2rem;
+            color:#fff;
+            font-weight: bold;
+            width:4rem;
+            text-align: center;
+        }
+    }
+}
+
+// ===============Score Section=====================
+.score-container{
+    position: relative;
+    width:100vw;
+    height:100vh;
+    display: none;
+    padding: 3rem 0 0 0;
+    background-color: #240E40;
+    span{
+        display: block;
+        text-align: center;
+        color:#fff;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+    #info{
+        margin-top: 0.5rem;
+        font-size: medium;
+    }
+    .display{
+        width:20rem;
+        height:20rem;
+        margin: auto;
+        .star-container{
+            height:3rem;
+            width:7rem;
+            margin:1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .star{
+                width: 2rem;
+                height:2rem;
+                background: url("../assets/white-star.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; 
+            }
+            .active{
+                width: 2rem;
+                height:2rem;
+                background: url("../assets/star.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .score{
+            position: relative;
+            width:10rem;
+            height:10rem;
+            text-align: center;
+            padding-top: 2.5rem;
+            border:5px solid #fff;
+            border-radius: 50%;
+            background-color: #3C4A76;
+            margin:1rem auto;
+            font-weight: bold;
+            color: #fff;
+            font-size: 3.5rem;
+            font-family: sans-serif;
+        }
+    }
+}
